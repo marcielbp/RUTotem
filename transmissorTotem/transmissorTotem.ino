@@ -19,8 +19,8 @@ void setup(){
 }
 void loop(){
 	const char *msgVERMELHO = "ledVERMELHO"; //VARIÁVEL RECEBE O VALOR (led)
-const char *msgVERDE = "ledVERDE"; //VARIÁVEL RECEBE O VALOR (led)
-const char *msgAMARELO = "ledAMARELO"; //VARIÁVEL RECEBE O VALOR (led)
+	const char *msgVERDE = "ledVERDE"; //VARIÁVEL RECEBE O VALOR (led)
+	const char *msgAMARELO = "ledAMARELO"; //VARIÁVEL RECEBE O VALOR (led)
 
 	if(digitalRead(pinoBotaoVERDE) == LOW){ //SE A LEITURA DO PINO FOR IGUAL A LOW, FAZ
     	driver.send((uint8_t *)msgVERDE, strlen(msgVERDE)); //ENVIA AS INFORMAÇÕES PARA O RECEPTOR (PALAVRA: led)
@@ -39,4 +39,3 @@ const char *msgAMARELO = "ledAMARELO"; //VARIÁVEL RECEBE O VALOR (led)
     	delay(100); //INTERVALO DE 200 MILISSEGUNDOS
 	}
 }
-
